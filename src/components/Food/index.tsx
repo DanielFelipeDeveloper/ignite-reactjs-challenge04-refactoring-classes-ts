@@ -1,17 +1,11 @@
+import { useState } from 'react';
 import { FiEdit3, FiTrash } from 'react-icons/fi';
 
-import { Container } from './styles';
-import api from '../../services/api';
-import { useState } from 'react';
+import { FoodData } from '../../interfaces/Food';
 
-interface FoodData {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  image: string;
-  available: boolean;
-}
+import api from '../../services/api';
+
+import { Container } from './styles';
 
 interface FoodProps {
   food: FoodData;
